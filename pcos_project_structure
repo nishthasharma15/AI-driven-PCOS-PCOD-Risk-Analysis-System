@@ -1,0 +1,24 @@
+digraph {
+	rankdir=TB
+	A [label="PCOS Project"]
+	B [label="data.py
+(Data Preprocessing)"]
+	C [label="model_training.py
+(Clinical Model)"]
+	D [label="model_training_basic.py
+(Basic Model)"]
+	E [label="pcos_rf_model.pkl"]
+	F [label="pcos_basic_model.pkl"]
+	G [label="app.py
+(Streamlit App)"]
+	H [label="PCOS_cleaned.csv"]
+	I [label="Visualization & Architecture"]
+	A -> B
+	A -> C
+	A -> D
+	C -> E
+	D -> F
+	B -> H
+	A -> G
+	A -> I
+}
